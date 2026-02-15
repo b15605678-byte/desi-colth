@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Website</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Website!</h1>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#contact ">Contact : 01377304408 </a>
+    </nav>
+
+    <main>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>This is a simple paragraph about the website.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Information</h2>
+            <p>You can reach us via email.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My Website</p>
+    </footer>
+</body>
+</html> <!DOCTYPE html>
+<html>
+<head>
+    <title>About Our Owner</title : Name : Bilal ilyas>
+</head>
+<body>
+
+    <h1>Meet Our Owner</h1>
+
+    <!-- Simple image with basic attributes -->
+    <img src="c:\Users\Administrator\Pictures\Screenshots\Screenshot 2025-10-03 193928.png" alt="Photo of the company owner, [Owner's Name]" width="300" height="200">
+
+    <p>This is a picture of our owner, [Name: Bilal Ilyas]. They started this business with a vision to provide [brief mission/value].</p>
+
+    <!-- Example of linking the image -->
+    <p>Learn more about our owner <a href="owner-bio.html">here</a>.</p>
+
+</body>
+</html>
+# A list of owner details, represented as dictionaries
+owners = [
+    {"id": 1, "name": "Bilal Ilyas", "id": "Manager103"},
+    {"id": 2, "name": "Malik shahzad", "_id": "Manager111"},
+    {"id": 3, "name": "Malik umer", "_id": " Manager113"}
+]
+
+print("--- Owner Details ---")
+
+# Iterate through each owner in the list
+for owner in owners:
+    # Print the details for the current owner
+    print(f"Owner ID: {owner['Manager111']}")
+    print(f"Name: {owner['name: Malik Ilyas']}")
+    print(f"Property ID: {owner['property_Malik Ilyas']}")
+    print("-" * 20) # A separator for clarity
+<!-- second-page.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Page</title>
+</head>
+<body>
+    <h1>Welcome to the Second Page!</h1>
+    <p>This is the content of the second page.</p>
+    <!-- Link back to the first page -->
+    <a href="index.html">Go back to the Home Page</a>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Details - Page 2</title>
+    <!-- Link the optional CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <form action="/submit_business_details" method="POST">
+            <h2>Business Details - Page 2</h2>
+            <p>Please provide the physical address and a point of contact for your business deals or contract for security.</p>
+
+            <!-- Section 1: Business Address -->
+            <label for="address">Street Address</label>
+            <input type="text" id="address" name="address" placeholder="e.g., 123 Main Street" required>
+
+            <label for="city">City</label>
+            <input type="text" id="city" name="city" placeholder="e.g., New York" required>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="zipcode">ZIP Code</label>
+                    <input type="text" id="zipcode" name="zipcode" placeholder="e.g., 10001" required>
+                </div>
+                <div class="form-group">
+                    <label for="country">Country</label>
+                    <select id="country" name="country" required>
+                        <option value="">Select Country</option>
+                        <option value="pakistan">Pakistan</option>
+                        <option value="Canada">Canada</option>
+                        <option value="UK">UK</option>
+                        <option value="Australia">Australia</option>
+                        <option value=" Germany" >  Germay </option></option>
+                        <!-- Add more countries as needed -->
+                    </select>
+                </div>
+            </div>
+
+            <!-- Section 2: Point of Contact -->
+            <h3>Point of Contact</h3>
+
+            <label for="contact_name">Full Name</label>
+            <input type="text" id="contact_name" name="contact_name" placeholder="e.g., Jane Doe" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="e.g., (123) 456-7890" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="e.g., jane@business.com" required>
+
+            <!-- Navigation Buttons -->
+            <div class="form-navigation">
+                <!-- Link back to your first page -->
+                <a href="business_info.html" class="back-button">Back</a>
+                <button type="submit" class="submit-button">Submit Information</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contract Details Form</title>
+    <link rel="stylesheet" href="style_contract.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <form action="/submit_contract_details" method="POST">
+            <h2>Contract & Business Nature Details</h2>
+            <p>Please provide the essential information required for a legally binding agreement.</p>
+
+            <!-- Section 1: Business Identification -->
+            <h3>Business Identification</h3>
+            
+            <label for="legal_name_party_a">Your Legal Business Name</label>
+            <input type="text" id="legal_name_party_a" name="legal_name_party_a" placeholder="e.g., Acme Corp LLC" required>
+
+            <label for="business_structure_party_a">Business Structure (e.g., LLC, Corp, Sole Prop)</label>
+            <input type="text" id="business_structure_party_a" name="business_structure_party_a" required>
+
+            <label for="rep_name">Authorized Representative Name</label>
+            <input type="text" id="rep_name" name="rep_name" placeholder="Person authorized to sign" required>
+
+            <!-- Section 2: Nature and Scope of Agreement -->
+            <h3>Nature & Scope of Agreement</h3>
+
+            <label for="purpose">Purpose of this Contract</label>
+            <textarea id="purpose" name="purpose" rows="4" placeholder="Briefly describe why this contract is being made (e.g., 'Agreement for Acme Corp to design and build a new website for Client X')." required></textarea>
+
+            <label for="description_of_services">Detailed Description of Goods/Services/Deliverables</label>
+            <textarea id="description_of_services" name="description_of_services" rows="6" placeholder="Be specific. Detail the exact services rendered, specifications, and what is excluded from the scope of work." required></textarea>
+
+            <label for="industry">Industry/Field of Business</label>
+            <input type="text" id="industry" name="industry" placeholder="e.g., Software Development, Consulting, Construction" required>
+
+            <!-- Section 3: Key Terms (High Level) -->
+            <h3>Key Terms Summary</h3>
+
+            <label for="payment_amount">Total Payment Amount (Currency)</label>
+            <input type="text" id="payment_amount" name="payment_amount" placeholder="e.g., $15,000 USD or 'As per attached Invoice A'" required>
+
+            <label for="start_date">Effective Start Date</label>
+            <input type="date" id="start_date" name="start_date" required>
+            
+            <label for="governing_law">Governing Law Jurisdiction</label>
+            <input type="text" id="governing_law" name="governing_law" placeholder="e.g., State of New York, USA" required>
+
+            <!-- Submit Button -->
+            <div class="form-navigation">
+                <button type="submit" class="submit-button">Generate Contract Details Summary</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contract Details Form with Document Uploads</title>
+    <link rel="stylesheet" href="style_contract.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <!-- CRITICAL: Must include enctype="multipart/form-data" for file uploads -->
+        <form action="/submit_contract_details" method="POST" enctype="multipart/form-data">
+            <h2>Contract & Business Nature Details</h2>
+            <p>Please provide essential information and upload required documentation for verification.</p>
+
+            <!-- Section 1: Business Identification (Previous fields omitted for brevity, assume they are here) -->
+            
+            <!-- Section 2: Verification Documents (New Section) -->
+            <h3>Verification Documents (Mandatory)</h3>
+
+            <label for="cnic_number">CNIC Number (Pakistani Format)</label>
+            <!-- Pattern enforces the format 12345-1234567-1 -->
+            <input type="text" id="cnic_number" name="cnic_number" placeholder="e.g., 12345-1234567-1" 
+                   pattern="[0-9]{5}-[0-9]{7}-[0-9]{1}" required
+                   title="Enter CNIC in the format: 12345-1234567-1">
+
+            <label for="dealer_photo">Photo of Dealer/Authorized Signatory (Face Photo)</label>
+            <!-- Accept attribute limits file picker to images -->
+            <input type="file" id="dealer_photo" name="dealer_photo" accept="image/*" required>
+
+            <label for="cnic_front_pic">CNIC Front Side Picture</label>
+            <input type="file" id="cnic_front_pic" name="cnic_front_pic" accept="image/*" required>
+
+            <label for="cnic_back_pic">CNIC Back Side Picture</label>
+            <input type="file" id="cnic_back_pic" name="cnic_back_pic" accept="image/*" required>
+            
+            <label for="business_doc_pic">Business/License Document Picture</label>
+            <input type="file" id="business_doc_pic" name="business_doc_pic" accept="image/*,.pdf" required>
+
+            <!-- Section 3: Key Terms Summary (Previous fields omitted for brevity, assume they are here) -->
+
+            <!-- Submit Button -->
+            <div class="form-navigation">
+                <button type="submit" class="submit-button">Submit All Information & Documents</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summary of Pakistan Contract Law (Contract Act, 1872)</title>
+    <link rel="stylesheet" href="style_law.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Understanding the Contract Act, 1872 (Pakistan)</h1>
+        <p>A simple guide to the legal requirements for a valid and enforceable contract between dealers and contractors, as defined by Pakistani Law.</p>
+        
+        <h2>Essential Elements of a Valid Contract</h2>
+        <p>According to Section 2(h) of the Contract Act, 1872, "An agreement enforceable by law is a contract." For an agreement to be legally binding, all the following elements must be present:</p>
+
+        <div class="law-section">
+            <h3>1. Proper Offer and Acceptance</h3>
+            <ul>
+                <li>One party must make a clear offer, and the other party must accept it fully and without conditions.</li>
+                <li>Communication of the offer and acceptance is crucial.</li>
+            </ul>
+        </div>
+
+        <div class="law-section">
+            <h3>2. Lawful Consideration ("Something in Return")</h3>
+            <ul>
+                <li>There must be an exchange of value (money, goods, services, or a promise).</li>
+                <li>The consideration must be real and lawful (e.g., payment for legal services is valid; payment for illegal activity is not).</li>
+            </ul>
+        </div>
+
+        <div class="law-section">
+            <h3>3. Capacity to Contract (Competent Parties)</h3>
+            <ul>
+                <li>Both parties must be legally competent to enter an agreement.</li>
+                <li>Parties must be:
+                    <ul>
+                        <li>Of the age of majority (18 years old in Pakistan).</li>
+                        <li>Of sound mind at the time of agreement.</li>
+                        <li>Not disqualified from contracting by any specific law.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="law-section">
+            <h3>4. Free Consent</h3>
+            <ul>
+                <li>Agreement must be made voluntarily. Consent is not "free" if obtained by coercion, fraud, misrepresentation, or undue influence.</li>
+                <li>A contract signed under pressure can be considered voidable by the affected party.</li>
+            </ul>
+        </div>
+
+       
